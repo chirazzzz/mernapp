@@ -4,10 +4,9 @@ import dotenv from "dotenv";
 import errorHandler from "./middleware/errorMiddleware.js";
 import connectDB from "./config/db.js";
 import router from "./routes/goalRoutes.js";
+dotenv.config();
 
 connectDB()
-
-dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 const app = express();
